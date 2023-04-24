@@ -17,11 +17,11 @@ const GREY = {
 };
 
 const PRIMARY = {
-  lighter: '#D1E9FC',
-  light: '#76B0F1',
-  main: '#2065D1',
-  dark: '#103996',
-  darker: '#061B64',
+  lighter: '#C8FACD',
+  light: '#5BE584',
+  main: '#00AB55',
+  dark: '#007B55',
+  darker: '#005249',
   contrastText: '#fff',
 };
 
@@ -35,38 +35,38 @@ const SECONDARY = {
 };
 
 const INFO = {
-  lighter: '#D0F2FF',
-  light: '#74CAFF',
-  main: '#1890FF',
-  dark: '#0C53B7',
-  darker: '#04297A',
+  lighter: '#CAFDF5',
+  light: '#61F3F3',
+  main: '#00B8D9',
+  dark: '#006C9C',
+  darker: '#003768',
   contrastText: '#fff',
 };
 
 const SUCCESS = {
-  lighter: '#E9FCD4',
-  light: '#AAF27F',
-  main: '#54D62C',
-  dark: '#229A16',
-  darker: '#08660D',
+  lighter: '#D8FBDE',
+  light: '#86E8AB',
+  main: '#36B37E',
+  dark: '#1B806A',
+  darker: '#0A5554',
   contrastText: GREY[800],
 };
 
 const WARNING = {
-  lighter: '#FFF7CD',
-  light: '#FFE16A',
-  main: '#FFC107',
-  dark: '#B78103',
-  darker: '#7A4F01',
+  lighter: '#FFF5CC',
+  light: '#FFD666',
+  main: '#FFAB00',
+  dark: '#B76E00',
+  darker: '#7A4100',
   contrastText: GREY[800],
 };
 
 const ERROR = {
-  lighter: '#FFE7D9',
-  light: '#FFA48D',
-  main: '#FF4842',
-  dark: '#B72136',
-  darker: '#7A0C2E',
+  lighter: '#FFE9D5',
+  light: '#FFAC82',
+  main: '#FF5630',
+  dark: '#B71D18',
+  darker: '#7A0916',
   contrastText: '#fff',
 };
 
@@ -102,36 +102,21 @@ const palette = {
   },
 };
 
-const paletteCustom1 = {
-  common: { black: '#000', white: '#fff' },
-  primary: PRIMARY,
-  secondary: SECONDARY,
-  info: INFO,
-  success: SUCCESS,
-  warning: WARNING,
-  error: ERROR,
-  grey: GREY,
-  divider: alpha(GREY[500], 0.24),
-  text: {
-    primary: GREY[800],
-    secondary: GREY[600],
-    disabled: GREY[500],
-  },
-  background: {
-    paper: '#fff',
-    default: GREY[100],
-    neutral: GREY[200],
-  },
-  action: {
-    active: GREY[600],
-    hover: alpha(GREY[500], 0.08),
-    selected: alpha(GREY[500], 0.16),
-    disabled: alpha(GREY[500], 0.8),
-    disabledBackground: alpha(GREY[500], 0.24),
-    focus: alpha(GREY[500], 0.24),
-    hoverOpacity: 0.08,
-    disabledOpacity: 0.48,
-  },
+// Define color palette object
+const bulmaPalette = {
+  primary: 'hsl(171, 100%, 41%)',
+  link: 'hsl(217, 71%, 53%)',
+  secondary: 'hsl(171, 100%, 50%)',
+  success: 'hsl(141, 53%, 53%)',
+  info: 'hsl(204, 86%, 53%)',
+  warning: 'hsl(48, 100%, 67%)',
+  danger: 'hsl(348, 100%, 61%)',
+  light: 'hsl(0, 0%, 96%)',
+  dark: 'hsl(0, 0%, 21%)',
+  contrastText: '#fff',
+  white: 'hsl(0, 0%, 100%)',
+  black: 'hsl(0, 0%, 4%)',
+  error: 'hsl(348, 100%, 61%)',
 };
 
-export { palette, paletteCustom1 };
+export { palette };

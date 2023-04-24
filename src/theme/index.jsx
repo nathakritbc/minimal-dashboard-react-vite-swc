@@ -23,8 +23,8 @@ export default function ThemeProvider({ children }) {
       palette,
       shape: { borderRadius: 6 },
       typography,
-      shadows: shadows(),
-      customShadows: customShadows(),
+      shadows: shadows({ palette }),
+      customShadows: customShadows({ palette }),
     }),
     []
   );
